@@ -10,7 +10,8 @@ reversedString = r.text[::-1]
 jsonReturn = {'token':'1affd2045f325a53eece718f96429a70',
     'string': reversedString}
 
-r = requests.post ('http://challenge.code2040.org/api/reverse/validate',
+validate = requests.post ('http://challenge.code2040.org/api/reverse/validate',
     params=jsonReturn)
 
-print (reversedString)
+print reversedString
+print validate.text

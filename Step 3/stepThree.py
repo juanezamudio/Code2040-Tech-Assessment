@@ -10,19 +10,19 @@ print (r.text)
 needle = data["needle"]
 haystack = data["haystack"]
 
-def getIndex():
-    index = 0
-    for hay in haystack:
-        if hay == needle:
-            print index
-            print haystack[index]
-            break
-        else:
-            index += 1
-    return index
+index = 0
+for hay in haystack:
+    if hay == needle:
+        print index
+        print haystack[index]
+        break
+    else:
+        index += 1
 
 jsonReturn = {'token':'1affd2045f325a53eece718f96429a70',
-    'needle': getIndex()}
+    'needle': index}
 
 validate = requests.post ('http://challenge.code2040.org/api/haystack/validate',
     params=jsonReturn)
+
+print validate.text

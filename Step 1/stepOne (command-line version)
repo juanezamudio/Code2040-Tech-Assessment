@@ -2,8 +2,9 @@
 //before, but I decided to try using Python to make an HTTP POST request and
 //connect to the API, so that is why I have two step 1 versions.
 //This version seems the easiest to me as I was able to connect through a very
-//simple command line, but I wanted to gain some more practice using Python and,
-//therefore, I wanted to redo step 1 using Python instead of cURL
+//simple command line, but, since I do not have much experience with Python 
+//I wanted to gain some more practice using Python and,
+//therefore, I redid step 1 using Python instead of cURL
 
 curl -i -X POST -H 'Content-Type: application/json' -d
   '{"token": "1affd2045f325a53eece718f96429a70",
